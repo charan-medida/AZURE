@@ -48,7 +48,7 @@ export function Admin() {
   const handleSubmit = async () => {
     if (validateForm()) {
       try {
-        const response = await axios.post('http://localhost:5001/sub', formData);
+        const response = await axios.post('https://azure-dlr8.onrender.com/sub', formData);
         console.log('Data added successfully:', response.data);
 
         fetchUpdatedData();
@@ -62,7 +62,7 @@ export function Admin() {
 
   const fetchUpdatedData = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/sub');
+      const response = await axios.get('https://azure-dlr8.onrender.com/sub');
       console.log('Updated data:', response.data);
       setFetchedData(response.data);
       setFormData({
