@@ -1,0 +1,128 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px; 
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0; 
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container{
+  margin: 0 auto;
+  text-align: left;
+  width: 300px;
+  display: grid;
+  place-items: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.left-align{
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.repo-file-upload-container {
+  width: 100%;
+  padding: 20px;
+  height: 200px; /* Adjust height as needed */
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo-file-upload-label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.repo-file-upload-text {
+
+  font-weight: normal;
+  font-size: 24px;
+  color: #333;
+}
+
+.repo-file-upload-input {
+  display: none; 
+}
+
+.table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.td{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+.th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+.tr:nth-child(even) {
+  background-color: 'black';
+}
